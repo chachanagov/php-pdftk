@@ -758,7 +758,7 @@ class Pdf
         $i = $this->_handle++;
         $char = 'A';
         while ($i-- > 0) {
-            $char++;
+            $char = str_increment($char);
         }
 
         return $char;
